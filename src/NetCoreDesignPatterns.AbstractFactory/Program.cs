@@ -5,28 +5,26 @@ namespace NetCoreDesignPatterns.AbstractFactory
     // The client code works with factories and products only through abstract
     // types: AbstractFactory and AbstractProduct. This lets you pass any
     // factory or product subclass to the client code without breaking it.
-    internal class Program
+    public static class Program
     {
-        public void Main(string[] args)
+        public static void Main()
         {
             // The client code can work with any concrete factory class.
             Console.WriteLine("Client: Testing client code with the first factory type...");
-            ClientMethod(new BoatFactory());
+            ClientMethod(new ClassicFurnitureFactory());
             Console.WriteLine();
 
             Console.WriteLine("Client: Testing the same client code with the second factory type...");
-            ClientMethod(new CarFactory());
+            ClientMethod(new ContemporaryFactory());
         }
 
-        public void ClientMethod(IAbstractFactory factory)
+        public static void ClientMethod(IFurnitureFactory factory)
         {
-            var boat = factory.CreateProductBoat();
-            var car = factory.CreateVehicleCar();
+            var chair = factory.CreateChair();
+            var diningTable = factory.CreateDiningTable();
 
-            Console.WriteLine(boat.ToJson());
-            Console.WriteLine(car.ToJson());
-            //Console.WriteLine(productB.UsefulFunctionB());
-            //Console.WriteLine(productB.AnotherUsefulFunctionB(productA));
+            Console.WriteLine(chair.ToJson());
+            Console.WriteLine(diningTable.ToJson());
         }
     }
 }

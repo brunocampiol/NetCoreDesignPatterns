@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\NetCoreDesignPatterns.AbstractFactory\NetCoreDesignPatterns.AbstractFactory.csproj" />
     <ProjectReference Include="..\..\src\NetCoreDesignPatterns.FactoryMethod\NetCoreDesignPatterns.FactoryMethod.csproj" />
   </ItemGroup>
 

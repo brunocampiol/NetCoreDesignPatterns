@@ -1,6 +1,6 @@
 ﻿namespace NetCoreDesignPatterns.AbstractFactory.Models
 {
-    public interface IVehicle
+    public interface IFurniture
     {
         public Guid Id { get; set; }
     }

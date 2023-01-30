@@ -6,16 +6,16 @@ namespace NetCoreDesignPatterns.AbstractFactory
     // variant. The factory guarantees that resulting products are compatible.
     // Note that signatures of the Concrete Factory's methods return an abstract
     // product, while inside the method a concrete product is instantiated.
-    public class BoatFactory : IAbstractFactory
+    public class ClassicFurnitureFactory : IFurnitureFactory
     {
-        public IBoat CreateProductBoat()
+        public IFurniture CreateChair()
         {
-            throw new NotImplementedException();
+            return new ChairClassic();
         }
 
-        public ICar CreateVehicleCar()
+        public IFurniture CreateDiningTable()
         {
-            throw new NotImplementedException();
+            return new DiningTableClassic();
         }
     }
 }

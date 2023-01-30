@@ -17,7 +17,7 @@ namespace NetCoreDesignPatterns.Common.Extensions
 
             if (obj == null)
             {
-                throw new Exception($"Null object while deserializing to '{nameof(T)}'. Content: '{stringToObject}'");
+                throw new JsonException($"Null object while deserializing to '{nameof(T)}'. Content: '{stringToObject}'");
             }
 
             return obj;

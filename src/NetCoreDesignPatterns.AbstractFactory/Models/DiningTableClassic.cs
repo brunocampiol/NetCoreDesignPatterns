@@ -1,10 +1,9 @@
 ﻿namespace NetCoreDesignPatterns.AbstractFactory.Models
 {
-    public class GasolineCar : ICar
+    public class DiningTableClassic : IFurniture
     {
         public Guid Id { get; set; }
-        public int NumberOfTires { get; set; }
-        public float FuelTankSize { get; set; }
+        public int Seats { get; set; }
 
         // The variant, Product B2, is only able to work correctly with the
         // variant, Product A2. Nevertheless, it accepts any instance of
