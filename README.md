@@ -9,6 +9,7 @@ I'm following the designs listed here: [https://refactoring.guru/](https://refac
 
 ## Creational Patterns
 
+- Singleton
 - Simple Factory
 - Factory Method
 - Abstract Factory
