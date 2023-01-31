@@ -5,5 +5,6 @@
     {
         public Guid Id { get; set; }
         public int MaxWeight { get; set; }
+        public string Style => "Contemporary";
     }
 }

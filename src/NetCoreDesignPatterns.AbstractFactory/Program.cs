@@ -9,12 +9,15 @@ namespace NetCoreDesignPatterns.AbstractFactory
     {
         public static void Main()
         {
+            Console.WriteLine("Abstract Factory pattern");
+            Console.WriteLine("");
+
             // The client code can work with any concrete factory class.
-            Console.WriteLine("Client: Testing client code with the first factory type...");
+            Console.WriteLine("ClassicFurnitureFactory...");
             ClientMethod(new ClassicFurnitureFactory());
             Console.WriteLine();
 
-            Console.WriteLine("Client: Testing the same client code with the second factory type...");
+            Console.WriteLine("ContemporaryFactory...");
             ClientMethod(new ContemporaryFactory());
         }
 
@@ -23,7 +26,9 @@ namespace NetCoreDesignPatterns.AbstractFactory
             var chair = factory.CreateChair();
             var diningTable = factory.CreateDiningTable();
 
+            Console.WriteLine("Chair output:");
             Console.WriteLine(chair.ToJson());
+            Console.WriteLine("Dinning table output:");
             Console.WriteLine(diningTable.ToJson());
         }
     }

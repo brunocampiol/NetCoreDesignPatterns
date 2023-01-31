@@ -4,6 +4,7 @@
     {
         public Guid Id { get; set; }
         public int Seats { get; set; }
+        public string Style => "Classic";
 
         // The variant, Product B2, is only able to work correctly with the
         // variant, Product A2. Nevertheless, it accepts any instance of
