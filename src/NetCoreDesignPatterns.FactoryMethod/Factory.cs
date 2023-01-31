@@ -2,11 +2,11 @@
 
 namespace NetCoreDesignPatterns.FactoryMethod
 {
-    public abstract class Creator
+    public abstract class Factory
     {
         // Note that the Creator may also provide some default implementation of
         // the factory method.
-        public abstract IVehicle FactoryMethod();
+        public abstract IVehicle CreateVehicle();
 
     }
 }

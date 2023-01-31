@@ -2,9 +2,9 @@
 
 namespace NetCoreDesignPatterns.FactoryMethod
 {
-    public class BoatCreator : Creator
+    public class BoatFactory : Factory
     {
-        public override IVehicle FactoryMethod()
+        public override IVehicle CreateVehicle()
         {
             var boat = new Boat()
             {
